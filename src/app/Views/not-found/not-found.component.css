@@ -1,0 +1,80 @@
+/* Estilos para el componente NotFoundComponent */
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    /* Fondo gris suave */
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    /* Texto oscuro */
+    text-align: center;
+    overflow: hidden;
+}
+
+.error-container h2 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #a0522d;
+    /* Color marrón oscuro */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    animation: titleAnimation 2s infinite alternate;
+}
+
+.error-container p {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    color: #555;
+}
+
+.error-container button {
+    background-color: #a0522d;
+    /* Botón marrón oscuro */
+    color: white;
+    border: none;
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: inherit;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    animation: buttonAnimation 2s infinite alternate;
+}
+
+.error-container button:hover {
+    background-color: #804020;
+    /* Botón marrón más oscuro al pasar el ratón */
+    transform: translateY(-2px);
+}
+
+@keyframes titleAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes buttonAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

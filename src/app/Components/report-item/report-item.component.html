@@ -1,0 +1,26 @@
+<div class="">
+    <h2>Formulario de Nuevo Reporte</h2>
+
+    <section class="item-report">
+
+        <p id="id"> {{item.id}} </p>
+        <div>
+            <div class="image-placeholder">
+                {{item.img}}
+            </div>
+            <div class="details">
+                <p class="date"> {{item.date}} </p>
+                <p class="id-report"> {{item.idReport}} </p>
+                <p class="name"> {{item.name}} </p>
+                <p class="status"> {{item.estado}} </p>
+            </div>
+            <div class="actions">
+                <button class="view-details" (click)="navigateToID()">Ver Detalles</button>
+                <button class="delete">Eliminar</button>
+            </div>
+            <p class="description"> {{item.description}} </p>
+        </div>
+
+    </section>
+
+</div>
